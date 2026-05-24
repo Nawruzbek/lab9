@@ -1,4 +1,4 @@
-name: iOS CI
+name: Build App
 
 on:
   push:
@@ -9,14 +9,9 @@ on:
 jobs:
   build:
     runs-on: macos-latest
-    
     steps:
       - uses: actions/checkout@v4
-      
-      - name: Select Xcode
-        run: sudo xcode-select -switch /Applications/Xcode.app
-      
-      - name: Build project (generic iOS simulator)
-        run: |
-          cd FoodDeliveryApp
-          xcodebuild -project FoodDeliveryApp.xcodeproj -scheme FoodDeliveryApp -destination 'generic/platform=iOS Simulator' build
+      - name: Build
+      run: |
+        cd FoodDeliveryApp
+        xcodebuild -project FoodDeliveryApp.xcodeproj -scheme FoodDeliveryApp build
