@@ -2,7 +2,7 @@
 //  Persistence.swift
 //  FoodDeliveryApp
 //
-//  Created by Nawruzbek Ibragimow on 24.05.2026.
+//  Created by Nawruzbek Ibragimow on 25.05.2026.
 //
 
 import CoreData
