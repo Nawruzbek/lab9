@@ -12,4 +12,4 @@ jobs:
       - name: Build
         run: |
           cd FoodDeliveryApp
-          xcodebuild -project FoodDeliveryApp.xcodeproj -scheme FoodDeliveryApp build
+          xcodebuild -project FoodDeliveryApp.xcodeproj -scheme FoodDeliveryApp -destination 'generic/platform=iOS Simulator' build
